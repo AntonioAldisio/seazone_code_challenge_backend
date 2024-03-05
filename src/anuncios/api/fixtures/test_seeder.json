@@ -1,0 +1,28 @@
+[
+    {
+      "model": "api.imovel",
+      "pk": 1,
+      "fields": {
+        "codigo_imovel": 1,
+        "limite_hospedes": 4,
+        "quantidade_banheiros": 2,
+        "aceita_animais": true,
+        "valor_limpeza": 80.0,
+        "data_ativacao": "2023-06-01",
+        "data_criacao": "2023-06-01T12:00:00Z",
+        "data_atualizacao": "2023-06-01T12:00:00Z"
+      }
+    },
+    {
+      "model": "api.anuncio",
+      "pk": 1,
+      "fields": {
+        "codigo_imovel": 1,
+        "plataforma": "AirBnb",
+        "taxa_plataforma": "10.00",
+        "data_criacao": "2023-01-01T10:00:00Z",
+        "data_atualizacao": "2023-01-01T12:00:00Z",
+        "imovel": 1
+      }
+    }
+  ]

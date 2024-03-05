@@ -1,0 +1,252 @@
+[
+  {
+    "model": "api.imovel",
+    "pk": 1,
+    "fields": {
+      "codigo_imovel": 1,
+      "limite_hospedes": 4,
+      "quantidade_banheiros": 2,
+      "aceita_animais": true,
+      "valor_limpeza": 80.0,
+      "data_ativacao": "2023-06-01",
+      "data_criacao": "2023-06-01T12:00:00Z",
+      "data_atualizacao": "2023-06-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "api.imovel",
+    "pk": 2,
+    "fields": {
+      "codigo_imovel": 2,
+      "limite_hospedes": 2,
+      "quantidade_banheiros": 1,
+      "aceita_animais": false,
+      "valor_limpeza": 50.0,
+      "data_ativacao": "2023-06-02",
+      "data_criacao": "2023-06-01T12:00:00Z",
+      "data_atualizacao": "2023-06-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "api.imovel",
+    "pk": 3,
+    "fields": {
+      "codigo_imovel": 3,
+      "limite_hospedes": 1,
+      "quantidade_banheiros": 10,
+      "aceita_animais": false,
+      "valor_limpeza": 10.0,
+      "data_ativacao": "2023-04-01",
+      "data_criacao": "2023-06-01T12:00:00Z",
+      "data_atualizacao": "2023-06-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "api.imovel",
+    "pk": 4,
+    "fields": {
+      "codigo_imovel": 4,
+      "limite_hospedes": 10,
+      "quantidade_banheiros": 5,
+      "aceita_animais": true,
+      "valor_limpeza": 100.0,
+      "data_ativacao": "2023-06-12",
+      "data_criacao": "2023-06-01T12:00:00Z",
+      "data_atualizacao": "2023-06-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "api.imovel",
+    "pk": 5,
+    "fields": {
+      "codigo_imovel": 5,
+      "limite_hospedes": 4,
+      "quantidade_banheiros": 2,
+      "aceita_animais": false,
+      "valor_limpeza": 50.0,
+      "data_ativacao": "2023-06-02",
+      "data_criacao": "2023-06-01T12:00:00Z",
+      "data_atualizacao": "2023-06-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "api.anuncio",
+    "pk": 1,
+    "fields": {
+      "codigo_imovel": 1,
+      "plataforma": "AirBnb",
+      "taxa_plataforma": "10.00",
+      "data_criacao": "2023-01-01T10:00:00Z",
+      "data_atualizacao": "2023-01-01T12:00:00Z",
+      "imovel": 1
+    }
+  },
+  {
+    "model": "api.anuncio",
+    "pk": 2,
+    "fields": {
+      "codigo_imovel": 2,
+      "plataforma": "Booking",
+      "taxa_plataforma": "15.00",
+      "data_criacao": "2023-02-01T09:30:00Z",
+      "data_atualizacao": "2023-02-01T11:30:00Z",
+      "imovel": 2
+    }
+  },
+  {
+    "model": "api.anuncio",
+    "pk": 3,
+    "fields": {
+      "codigo_imovel": 5,
+      "plataforma": "123 Milhas",
+      "taxa_plataforma": "25.00",
+      "data_criacao": "2023-02-01T09:30:00Z",
+      "data_atualizacao": "2023-02-01T11:30:00Z",
+      "imovel": 5
+    }
+  },
+  {
+    "model": "api.reserva",
+    "pk": 1,
+    "fields": {
+      "codigo_reserva": "ABC123",
+      "id_anuncio": 1,
+      "data_checkin": "2023-07-01",
+      "data_checkout": "2023-07-05",
+      "preco_total": "1000.00",
+      "comentario": "Reserva de teste",
+      "numero_hospedes": 2,
+      "data_criacao": "2023-06-30T10:00:00Z",
+      "data_atualizacao": "2023-06-30T12:00:00Z",
+      "anuncio": 1
+    }
+  },
+  {
+    "model": "api.reserva",
+    "pk": 2,
+    "fields": {
+      "codigo_reserva": "XYZ789",
+      "id_anuncio": 2,
+      "data_checkin": "2023-07-10",
+      "data_checkout": "2023-07-15",
+      "preco_total": "1500.00",
+      "comentario": "",
+      "numero_hospedes": 4,
+      "data_criacao": "2023-06-30T11:00:00Z",
+      "data_atualizacao": "2023-06-30T13:00:00Z",
+      "anuncio": 2
+    }
+  },
+  {
+    "model": "api.reserva",
+    "pk": 3,
+    "fields": {
+      "codigo_reserva": "ABCDEF12",
+      "id_anuncio": 3,
+      "data_checkin": "2023-07-11",
+      "data_checkout": "2023-07-16",
+      "preco_total": "1500.00",
+      "comentario": "Tem como ter mais toalhas?",
+      "numero_hospedes": 4,
+      "data_criacao": "2023-06-30T11:00:00Z",
+      "data_atualizacao": "2023-06-30T13:00:00Z",
+      "anuncio": 3
+    }
+  },
+  {
+    "model": "api.reserva",
+    "pk": 4,
+    "fields": {
+      "codigo_reserva": "XYZ781",
+      "id_anuncio": 2,
+      "data_checkin": "2023-08-10",
+      "data_checkout": "2023-08-15",
+      "preco_total": "1500.00",
+      "comentario": "",
+      "numero_hospedes": 4,
+      "data_criacao": "2023-06-30T11:00:00Z",
+      "data_atualizacao": "2023-06-30T13:00:00Z",
+      "anuncio": 2
+    }
+  },
+  {
+    "model": "api.reserva",
+    "pk": 5,
+    "fields": {
+      "codigo_reserva": "DEF456",
+      "id_anuncio": 3,
+      "data_checkin": "2023-07-20",
+      "data_checkout": "2023-07-25",
+      "preco_total": "2000.00",
+      "comentario": "",
+      "numero_hospedes": 3,
+      "data_criacao": "2023-06-30T14:00:00Z",
+      "data_atualizacao": "2023-06-30T16:00:00Z",
+      "anuncio": 3
+    }
+  },
+  {
+    "model": "api.reserva",
+    "pk": 6,
+    "fields": {
+      "codigo_reserva": "GHI789",
+      "id_anuncio": 1,
+      "data_checkin": "2023-07-15",
+      "data_checkout": "2023-07-20",
+      "preco_total": "1200.00",
+      "comentario": "Reserva confirmada",
+      "numero_hospedes": 2,
+      "data_criacao": "2023-06-30T15:00:00Z",
+      "data_atualizacao": "2023-06-30T17:00:00Z",
+      "anuncio": 1
+    }
+  },
+  {
+    "model": "api.reserva",
+    "pk": 7,
+    "fields": {
+      "codigo_reserva": "JKL012",
+      "id_anuncio": 2,
+      "data_checkin": "2023-08-01",
+      "data_checkout": "2023-08-05",
+      "preco_total": "1800.00",
+      "comentario": "Necessidade de estacionamento",
+      "numero_hospedes": 3,
+      "data_criacao": "2023-06-30T16:00:00Z",
+      "data_atualizacao": "2023-06-30T18:00:00Z",
+      "anuncio": 2
+    }
+  },
+  {
+    "model": "api.reserva",
+    "pk": 8,
+    "fields": {
+      "codigo_reserva": "MNO345",
+      "id_anuncio": 3,
+      "data_checkin": "2023-08-10",
+      "data_checkout": "2023-08-15",
+      "preco_total": "2500.00",
+      "comentario": "",
+      "numero_hospedes": 4,
+      "data_criacao": "2023-06-30T17:00:00Z",
+      "data_atualizacao": "2023-06-30T19:00:00Z",
+      "anuncio": 3
+    }
+  },
+  {
+    "model": "api.reserva",
+    "pk": 9,
+    "fields": {
+      "codigo_reserva": "PQR678",
+      "id_anuncio": 1,
+      "data_checkin": "2023-08-20",
+      "data_checkout": "2023-08-25",
+      "preco_total": "3000.00",
+      "comentario": "Necessidade de berço",
+      "numero_hospedes": 2,
+      "data_criacao": "2023-06-30T18:00:00Z",
+      "data_atualizacao": "2023-06-30T20:00:00Z",
+      "anuncio": 1
+    }
+  }
+]
