@@ -40,9 +40,12 @@ Ao seguir essa linha de desenvolvimento, foi possível estruturar o projeto de f
 
 ### 3.1 Docker
 
-Clone o repositorio e entre na pasta Estudo_Django
+Clone o repositorio e entre na pasta seazone_code_challenge_backend
+
 ```bash
-$ git clone https://github.com/AntonioAldisio/Estudo_Django.git && cd Estudo_Django
+$ git clone https://github.com/AntonioAldisio/seazone_code_challenge_backend
+.git && cd seazone_code_challenge_backend
+
 ```
 
 Para realizar o build e subir os container
