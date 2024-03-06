@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    env_file:
+      - .env
+    command: --default-authentication-plugin=mysql_native_password
+
+  imoveis:
+    build: src/imovel
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+    links:
+      - db
+
+  anuncios:
+    build: src/anuncios
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+    depends_on:
+      - db
+    links:
+      - db
+
+  reserva:
+    build: src/reservas
+    ports:
+      - "8002:8002"
+    env_file:
+      - .env
+    depends_on:
+      - db
+    links:
+      - db
